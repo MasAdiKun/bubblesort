@@ -188,7 +188,7 @@ public class SortFrame extends javax.swing.JFrame {
                 }
             }
         }
-        for(int i = 0; i<data.length;i++){
+        for(int i=0;i<data.length;i++){
             tf_result.setText("["+ data[0]+","+data[1]+","+data[2]+","+data[3]+","+
                     data[4]+"]");
         }
@@ -203,7 +203,7 @@ public class SortFrame extends javax.swing.JFrame {
             flag.add("First field must be filled!");
         }
         
-        if(!num1.matches("-[0-9]+")){
+        if(!num1.matches("-[0-9]") && !num1.matches("[0-9]+")){
             flag.add("First field only accept number!");
         }
         
@@ -213,7 +213,7 @@ public class SortFrame extends javax.swing.JFrame {
             flag.add("Second field must be filled!");
         }
         
-        if(!num2.matches("-[0-9]+")){
+        if(!num2.matches("-[0-9]") && !num2.matches("[0-9]+")){
             flag.add("Second field only accept number!");
         }
         
@@ -223,7 +223,7 @@ public class SortFrame extends javax.swing.JFrame {
             flag.add("Third field must be filled!");
         }
         
-        if(!num3.matches("-[0-9]+")){
+        if(!num3.matches("-[0-9]") && !num3.matches("[0-9]+")){
             flag.add("Third field only accept number!");
         }
         
@@ -233,7 +233,7 @@ public class SortFrame extends javax.swing.JFrame {
             flag.add("Fourth field must be filled!");
         }
         
-        if(!num4.matches("-[0-9]+")){
+        if(!num4.matches("-[0-9]") && !num4.matches("[0-9]+")){
             flag.add("Fourth field only accept number!");
         }
         
@@ -243,7 +243,7 @@ public class SortFrame extends javax.swing.JFrame {
             flag.add("Fifth field must be filled!");
         }
         
-        if(!num5.matches("-[0-9]+")){
+        if(!num5.matches("-[0-9]") && !num5.matches("[0-9]+")){
             flag.add("Fifth field only accept number!");
         }
         
